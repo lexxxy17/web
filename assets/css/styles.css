@@ -61,7 +61,7 @@ main { flex: 1 0 auto; }
 .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 14px; box-shadow: var(--shadow); }
 .card h3 { margin: 10px 0 6px; font-size: 18px; }
 .price { color: var(--text); font-weight: 600; margin: 0 0 10px; }
-.thumb { height: 140px; border-radius: 10px; border: 1px solid var(--border); background: linear-gradient(135deg, rgba(255,255,255,0.05), transparent 50%), #222a3a; }
+.thumb { height: 140px; width: 100%; display: block; object-fit: cover; border-radius: 10px; border: 1px solid var(--border); background: linear-gradient(135deg, rgba(255,255,255,0.05), transparent 50%), #222a3a; }
 .thumb-1 { background: linear-gradient(135deg, rgba(79,124,255,.25), transparent 50%), #222a3a; }
 .thumb-2 { background: linear-gradient(135deg, rgba(40,196,143,.25), transparent 50%), #222a3a; }
 .thumb-3 { background: linear-gradient(135deg, rgba(255,97,116,.25), transparent 50%), #222a3a; }
