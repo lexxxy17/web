@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>КроссМаркет — Корзина</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="cart">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">КроссМаркет</a>
+        <nav class="nav">
+          <a href="index.html" data-link="home">Главная</a>
+          <a href="shop.html" data-link="shop">Магазин</a>
+          <a href="about.html" data-link="about">О нас</a>
+          <a href="contacts.html" data-link="contacts">Контакты</a>
+          <a href="cart.html" data-link="cart">Корзина <span class="badge" id="cart-count">0</span></a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Ваша корзина</h1>
+      <div id="cart-empty" class="muted">Корзина пуста.</div>
+      <div id="cart-items" class="cart-list"></div>
+      <div id="cart-summary" class="cart-summary hidden">
+        <div class="summary-row">
+          <span>Итого:</span>
+          <strong id="cart-total">0 ₽</strong>
+        </div>
+        <div class="actions">
+          <button class="btn" id="clear-cart">Очистить</button>
+          <button class="btn primary" id="checkout">Оформить заказ</button>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 КроссМаркет.</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>

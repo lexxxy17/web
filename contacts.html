@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>КроссМаркет — Контакты</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="contacts">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">КроссМаркет</a>
+        <nav class="nav">
+          <a href="index.html" data-link="home">Главная</a>
+          <a href="shop.html" data-link="shop">Магазин</a>
+          <a href="about.html" data-link="about">О нас</a>
+          <a href="contacts.html" data-link="contacts">Контакты</a>
+          <a href="cart.html" data-link="cart">Корзина <span class="badge" id="cart-count">0</span></a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Свяжитесь с нами</h1>
+
+      <div class="grid-2">
+        <form id="contact-form" novalidate class="card form-card" aria-describedby="form-help">
+          <div class="field">
+            <label for="name">Имя *</label>
+            <input id="name" name="name" type="text" required minlength="2" placeholder="Ваше имя" />
+            <div class="error" id="error-name" aria-live="polite"></div>
+          </div>
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required placeholder="name@example.com" />
+            <div class="error" id="error-email" aria-live="polite"></div>
+          </div>
+          <div class="field">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+7 900 000-00-00" />
+            <div class="error" id="error-phone" aria-live="polite"></div>
+          </div>
+          <div class="field">
+            <label for="message">Сообщение *</label>
+            <textarea id="message" name="message" required minlength="10" rows="5" placeholder="Коротко опишите вопрос"></textarea>
+            <div class="error" id="error-message" aria-live="polite"></div>
+          </div>
+
+          <p id="form-help" class="muted">Поля, отмеченные звёздочкой, обязательны для заполнения.</p>
+
+          <div class="actions">
+            <button class="btn primary" id="submit-btn" type="submit">Отправить</button>
+            <button class="btn" type="reset">Очистить</button>
+          </div>
+
+          <div class="success hidden" id="form-success" role="status" aria-live="polite">
+            Спасибо! Мы свяжемся с вами в ближайшее время.
+          </div>
+        </form>
+
+        <aside>
+          <h3>Контакты</h3>
+          <p>Email: support@krossmarket.example</p>
+          <p>Телефон: +7 (495) 123‑45‑67</p>
+          <p>Адрес: г. Москва, ул. Примерная, 10</p>
+          <div class="map-placeholder" aria-label="Карта" role="img"></div>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 КроссМаркет.</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>

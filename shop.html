@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>КроссМаркет — Магазин</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="shop">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">КроссМаркет</a>
+        <nav class="nav">
+          <a href="index.html" data-link="home">Главная</a>
+          <a href="shop.html" data-link="shop">Магазин</a>
+          <a href="about.html" data-link="about">О нас</a>
+          <a href="contacts.html" data-link="contacts">Контакты</a>
+          <a href="cart.html" data-link="cart">Корзина <span class="badge" id="cart-count">0</span></a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Каталог кроссовок</h1>
+      <div class="product-grid" id="product-grid">
+        <!-- Cards rendered statically for demo -->
+        <article class="card" data-id="nx-001" data-name="Nike Air Zoom" data-price="11990">
+          <div class="thumb thumb-1" aria-hidden="true"></div>
+          <h3>Nike Air Zoom</h3>
+          <p class="price">11 990 ₽</p>
+          <button class="btn add-to-cart">В корзину</button>
+        </article>
+        <article class="card" data-id="ad-002" data-name="Adidas Ultraboost" data-price="13990">
+          <div class="thumb thumb-2" aria-hidden="true"></div>
+          <h3>Adidas Ultraboost</h3>
+          <p class="price">13 990 ₽</p>
+          <button class="btn add-to-cart">В корзину</button>
+        </article>
+        <article class="card" data-id="nb-003" data-name="New Balance 574" data-price="9990">
+          <div class="thumb thumb-3" aria-hidden="true"></div>
+          <h3>New Balance 574</h3>
+          <p class="price">9 990 ₽</p>
+          <button class="btn add-to-cart">В корзину</button>
+        </article>
+        <article class="card" data-id="pm-004" data-name="Puma RS-X" data-price="10990">
+          <div class="thumb thumb-4" aria-hidden="true"></div>
+          <h3>Puma RS-X</h3>
+          <p class="price">10 990 ₽</p>
+          <button class="btn add-to-cart">В корзину</button>
+        </article>
+        <article class="card" data-id="as-005" data-name="ASICS Gel-Lyte" data-price="8990">
+          <div class="thumb thumb-5" aria-hidden="true"></div>
+          <h3>ASICS Gel-Lyte</h3>
+          <p class="price">8 990 ₽</p>
+          <button class="btn add-to-cart">В корзину</button>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 КроссМаркет.</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
